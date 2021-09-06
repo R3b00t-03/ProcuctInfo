@@ -12,7 +12,7 @@ class ProductInfo:
         self.url = url
         options = selenium.webdriver.FirefoxOptions()
         options.headless = True
-        # TODO: Firefox läuft auf Fehler
+        # TODO: Firefox läuft auf Fehler (Unter Windows)
         self.driver = selenium.webdriver.Firefox(GeckoDriverManager().install(), options=options)
         # self.driver = selenium.webdriver.Edge(EdgeChromiumDriverManager().install())
         self.refresh()
